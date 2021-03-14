@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "htmlhint": "htmlhint dist/*.html ",
+    "eslint": "eslint --ext .js src/ test/",
+    "stylelint": "stylelint --aei src/**/*.css",
+    "start": "serve src/"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "serve": "^11.0.2",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recommended": "^3.0.0"
+  },
+  "name": "portafolio",
+  "description": "Portafolio Luzciel Montesinos Sanchez",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luzciel/Portafolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luzciel/Portafolio/issues"
+  },
+  "homepage": "https://github.com/luzciel/Portafolio#readme"
+}
