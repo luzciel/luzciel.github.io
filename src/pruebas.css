@@ -85,6 +85,7 @@
 }
  .container * {
 	 background-color: transparent;
+     flex-wrap: nowrap !important;
 }
  .details-icon {
 	 font-size: 2.5vw;
@@ -175,10 +176,10 @@
 	 padding: 0 3px 0 3px;
 }
  .item-1 {
-	 background-image: url(./img/mdLink.jpg);
+	 background-image: url('./img/md-link-luzciel.png');
 }
  .item-1:hover {
-	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(http://www.storyepic.com/wp-content/uploads/2014/04/breaking_bad_by_motionshowcase-d5l3atm.png);
+	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('./img/mdLink.jpg');
 	 background-size: 100% 100%;
 }
  .item-2 {
@@ -199,14 +200,15 @@
 	 background-image: url(./img/socialVeg1.png);
 }
  .item-4:hover {
-	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(./img/SocialVeg.png);
+	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('./img/SocialVeg.png');
 	 background-size: 100% 100%;
 }
  .item-5 {
-	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(http://www.sickchirpse.com/wp-content/uploads/2017/03/Breaking-Bad.jpg);
+	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('./img/web-pago-con-tarjeta.png');
 }
  .item-5:hover {
-	 background-image: url(http://www.hdwallpapers.in/walls/marvel_deadpool_movie-wide.jpg);
+	 background-image: url('./img/web-modal-valido.png');
 	 background-size: 100% 100%;
 }
  
+
