@@ -1,7 +1,7 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css";
  * {
 	 margin: 0;
-	 pdding: 0;
+	 padding: 0;
 	 box-sizing: border-box;
 	 background-color: #141414;
 	 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -175,31 +175,31 @@
 	 padding: 0 3px 0 3px;
 }
  .item-1 {
-	 background-image: url(http://www.sickchirpse.com/wp-content/uploads/2017/03/Breaking-Bad.jpg);
+	 background-image: url(./img/mdLink.jpg);
 }
  .item-1:hover {
 	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(http://www.storyepic.com/wp-content/uploads/2014/04/breaking_bad_by_motionshowcase-d5l3atm.png);
 	 background-size: 100% 100%;
 }
  .item-2 {
-	 background-image: url(https://occ-0-2433-1001.1.nflxso.net/art/50b3d/36e2fd581106c1f4a27e1c7accd020dcc0f50b3d.jpg);
+	 background-image: url(./img/onu1.png);
 }
  .item-2:hover {
-	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(http://www.formulatv.com/images/fgaleria/56900/56921_rehenes-la-casa-de-papel.jpg);
+	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('./img/onu3.png');
 	 background-size: 100% 100%;
 }
  .item-3 {
-	 background-image: url(http://wp.freedomofcreation.co.uk/howtokillanhour/wp-content/uploads/sites/65/2018/01/back-mirror-season-4.jpg);
+	 background-image: url('./img/pokedatos1.png');
 }
  .item-3:hover {
-	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(https://thumbor.forbes.com/thumbor/960x0/smart/https%3A%2F%2Fblogs-images.forbes.com%2Finsertcoin%2Ffiles%2F2017%2F12%2Fblack-mirror-uss-callister.jpg%3Fwidth%3D960);
+	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('./img/pokedatos.png');
 	 background-size: 100% 100%;
 }
  .item-4 {
-	 background-image: url(https://i.ytimg.com/vi/i1eJMig5Ik4/maxresdefault.jpg);
+	 background-image: url(./img/socialVeg1.png);
 }
  .item-4:hover {
-	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(https://i.kinja-img.com/gawker-media/image/upload/s--GKg2jfhA--/c_scale,fl_progressive,q_80,w_800/vcta1kcxdr5y5xyulxel.png);
+	 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(./img/SocialVeg.png);
 	 background-size: 100% 100%;
 }
  .item-5 {

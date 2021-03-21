@@ -1,17 +1,18 @@
 /* CSS VARIABLES */
-:root {
+/* :root {
     --primary: #141414;
     --light: #F3F3F3;
     --dark: 	#686868;
-  }
+  } */
   
   html, body {
     width: 100vw;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: var(--primary);
-    color: var(--light);
+    background-color:#141414;;
+    /* background: radial-gradient(#fff, #aaa); */
+    color: #F3F3F3;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     line-height: 1.4;
@@ -23,6 +24,13 @@
   
   h1 {
     padding-top: 60px;  
+    padding-bottom: 20px;
+    color: white;
+  }
+  
+  p{
+    color: white;
+    margin-bottom: 0rem !important;
   }
   
   .wrapper {
@@ -40,7 +48,7 @@
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: 
      "nt mn mn sb . . . "; 
-    background-color: var(--primary);
+    background-color: #141414;
     width: 100%;
     margin-bottom: 0px;  
   }
@@ -72,7 +80,7 @@
   }
   
   .main-nav a {
-    color: var(--light);
+    color: #F3F3F3;
     text-decoration: none;
     margin: 5px;  
   }
@@ -87,7 +95,7 @@
   }
   
   .sub-nav a {
-    color: var(--light);
+    color: #F3F3F3;
     text-decoration: none;
     margin: 5px;
   }
@@ -95,8 +103,42 @@
   .sub-nav a:hover {
     color: var(--dark);
   }
-  
-  
+
+
+/* Sobre mi */
+  .about-me{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 9%;
+  }
+
+  .perfile {
+    max-width: 66%;
+    border-radius: 18px;
+    margin-left: 15%;
+  }
+  .btn-Curriculum{
+    color: black !important;
+    background: #F8F5F5;
+    border: 3px solid #EAB429;
+    width: 48%;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 6% 24% 0;
+    border-radius: 9px;
+  }
+  .fa-play:before {
+    content: "\f04b";
+    background: #F8F5F5;
+    color: #EAB40B;
+}
+
+  .about-me-text {
+    /* font-family: 'Playfair Display', serif; */
+    font-size: 140%;
+    text-align: justify;
+  }
   /* MAIN CONTIANER */
   .main-container {
     padding: 50px;
@@ -125,7 +167,7 @@
   
   /* LINKS */
   .link {
-    padding: 50px;
+    padding: 5px;
   }
   
   .sub-links ul {
@@ -141,6 +183,7 @@
     text-decoration: none;
   }
   
+  
   .sub-links a:hover {
     color: var(--dark);
     text-decoration: underline;
@@ -152,15 +195,20 @@
   
   .logo {
     color: var(--dark);
+    margin-right: 51px;
   }
   
+  .sub-links{
+    display: flex;
+    justify-content: center;
+  }
   
   /* FOOTER */
   footer {
-    padding: 20px;
+    padding: 0px;
     text-align: center;
     color: var(--dark);
-    margin: 10px;
+    margin: 0px;
   }
   
   /* MEDIA QUERIES */
@@ -248,7 +296,6 @@
     }
   
    
-  
     .box {
       display: grid;
       grid-gap: 20px;
@@ -283,3 +330,123 @@
     
      
   }
+
+
+
+
+
+  h2 {
+    /* background: rgba(0, 0, 0, 0.25); */
+    padding: 5px;
+  }
+  
+  .animation-text-wipe {
+    opacity: 0;
+    -webkit-mask-image: linear-gradient(to left, #0000 38%, #000 40%);
+    -webkit-mask-size: 300%;
+  }
+  
+  .animation-text-wipe.animate-in {
+    color: white;
+    animation-name: text-wipe;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+
+  .anim-delay-1 {
+    animation-delay: 0.25s;
+  }
+  .anim-delay-2 {
+    animation-delay: 0.5s;
+  }
+  .anim-delay-3 {
+    /* animation-delay: 3s; */
+    animation-delay: 0.5s;
+  }
+  
+  /**
+   * Safari has issues if you try to animate
+   * mask-size, so we set that on the element
+   * and only translate the position.
+   */
+  @keyframes text-wipe {
+    0% {
+      opacity: 1;
+      -webkit-mask-position: 100%;
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-mask-position: 0%;
+    }
+  }
+  
+  /**
+   * Arbitrary
+   */
+  /* body {
+    /* background: black; */
+    /* background-size: cover;
+    color: #fff;
+    font-size: 36px;
+    font-family: Verdana, sans-serif;
+    text-shadow: 0 0 3px #000, 0 0 2px #000, 0 0 1px #000;
+  } */
+
+
+  @media (min-width: 768px) {
+    .multi-item-carousel .carousel-inner .carousel-item {
+      margin-right: inherit;
+    }
+    .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item,
+    .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item {
+      display: block;
+    }
+    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+    }
+    .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.33333333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+    .multi-item-carousel .carousel-inner .carousel-item-next,
+    .multi-item-carousel .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+    .multi-item-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+    .multi-item-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item,
+    .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+    .multi-item-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+    .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      display: block;
+      visibility: visible;
+    }
+  }
+  
