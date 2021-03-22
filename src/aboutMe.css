@@ -1,7 +1,10 @@
 .testimonials {
-  background-color: #f33f02;
+  background-color: #ddd;
   position: relative;
-  padding-top: 80px;
+  /* padding-top: 80px; */
+  max-width: 100vw;
+    /* padding-top: 80px; */
+    max-height: 100vh;
 }
 .testimonials:after {
   content: "";
@@ -9,9 +12,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  height: 30%;
-  background-color: #ddd;
+  width: 100vw;
+  height: 59vh;
+  background-color: #EAB429;
 }
 
 #customers-testimonials .item-details {
@@ -19,6 +22,7 @@
   color: #fff;
   padding: 20px 10px;
   text-align: left;
+  height: 25vh;
 }
 #customers-testimonials .item-details h5 {
   margin: 0 0 15px;
@@ -26,7 +30,7 @@
   line-height: 18px;
 }
 #customers-testimonials .item-details h5 span {
-  color: red;
+  color: #EAB429;
   float: right;
   padding-right: 20px;
 }
@@ -70,4 +74,8 @@
 
 .owl-carousel .owl-next {
   right: -70px;
+}
+
+.img-responsive {
+  height: 33vh;
 }

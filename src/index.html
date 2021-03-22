@@ -6,19 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Luzciel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <!-- <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script> -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="http://themes.audemedia.com/html/goodgrowth/css/owl.theme.default.min.css">
-  <!-- <link rel="stylesheet" href="aboutMe.css" />  -->
+  <link rel="stylesheet" href="aboutMe.css" /> 
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="pruebas.css" />
+  <!-- <link rel="stylesheet" href="pruebas.css" /> -->
 </head>
 
 <body>
@@ -39,7 +37,8 @@
       </nav>
     </header>
     <!-- END OF HEADER -->
-    <section class="main-container">
+    <section class="main-container container">
+      <h1 class="About-me-title text-animations animation-text-wipe animate-in anim-delay-3">Sobre mi</h1>
       <div class="text-animations about-me">
         <div>
           <span class="animation-text-wipe animate-in anim-delay-2 about-me-text">
@@ -57,8 +56,10 @@
         <div>
           <img src="./img/perfil.1.jpeg" alt=""
             class="perfile text-animations animation-text-wipe animate-in anim-delay-3">
-          <button class="btn-Curriculum text-animations animation-text-wipe animate-in anim-delay-3"><i
-              class="fa fa-play" aria-hidden="true"></i> Curriculum</button>
+          <a href="https://drive.google.com/uc?id=1WCrz_93GxI3aeDC7Rb0WemegqsHlUrKl&export=download" target="_blank" download>
+            <button class="btn-Curriculum text-animations animation-text-wipe animate-in anim-delay-3"><i
+                class="fa fa-play" aria-hidden="true"></i> Curriculum</button>
+          </a>
         </div>
 
       </div>
@@ -66,219 +67,78 @@
     </section>
 
 
-    <div class="container">
-      <div class="carousel slide multi-item-carousel" id="theCarousel">
-        <div class="carousel-inner row w-100 mx-auto">
-          <div class="carousel-item active col-md-4" >
-            <div class="item item-1">
-      
-              <div class="body-item">
-                <div class="body-item-1">
-                  <div class="play">
-                    <!-- <i class="icon-play"></i> -->
+    <section class="testimonials">
+      <h1 id="Proyectos">Proyectos</h1>
+      <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div id="customers-testimonials" class="owl-carousel">
+    
+                <!--TESTIMONIAL 1 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-responsive" src="./img/md-link-luzciel.png" alt="">
+                    <div class="item-details">
+                      <h5>Md-link-luzciel <span>JavaScript | Node.Js</span></h5>
+                      <p>Librería NPM para extraer los enlaces de archivos markdown (.md), validar sus status y obtener estadísticas.</p>
+                      <!-- <button class="body-item-button">Codigo</button> -->
+                    </div>
                   </div>
                 </div>
-                <div class="title body-item-2">Md-link-luzciel</div>
-                <div class="properties body-item-3">
-                  <span class="match">JavaScript | Node.Js </span>
-                </div>
-                <div class="description">
-                  <p class="body-item-4">Librería NPM para extraer los enlaces de archivos markdown (.md), validar sus
-                    status y obtener estadísticas.</p>
-                  <button class="body-item-button">Codigo</button>
-                </div>
-                  <!-- <div class="body-item-5">
-                <i class="details-icon icon-chevron-down"></i>
-                </div> -->
-                  <!-- <div class="icon-set body-item-6">
-                <i class="icon-github-sign github"></i>
-                <i class="icon-thumbs-down"></i>
-                <i class="icon-plus"></i>
-                  </div> -->
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item col-md-4 item item-2">
-            <div class="item item-2">
-            <div class="body-item">
-              <div class="body-item-1">
-                <div class="play">
-                  <i class="icon-play"></i>
-                </div>
-              </div>
-              <div class="title body-item-2">ONU mujeres (Red Socia)</div>
-              <div class="properties body-item-3">
-                <span class="match">JavaScript | Node.Js</span>
-              </div>
-              <p class="description body-item-4">Librería NPM para extraer los enlaces de archivos markdown (.md),
-                validar sus status y obtener estadísticas.</p>
-              <div class="icon-set body-item-6">
-                <i class="icon-thumbs-up"></i>
-                <i class="icon-thumbs-down"></i>
-                <i class="icon-plus"></i>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="carousel-item col-md-4 item item-3">
-            <img src="" class="img-fluid mx-auto d-block ">
-          </div>
-          <div class="carousel-item col-md-4 item item-4">
-            <img src="" class="img-fluid mx-auto d-block">
-            <div class="item item-4">
-              <div class="body-item">
-                <div class="body-item-1">
-                  <div class="play">
-                    <i class="icon-play"></i>
+                <!--END OF TESTIMONIAL 1 -->
+                <!--TESTIMONIAL 2 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-responsive" src="./img/burgerQueen.png" alt="">
+                    <div class="item-details">
+                      <h5>Red Socia ONU <span>JavaScript, Node.js</span></h5>
+                      <p>Red social SPA exclusica para ONU mujeres.</p>
+                    </div>
                   </div>
                 </div>
-                <div class="title body-item-2">Pokedatos</div>
-                <div class="properties body-item-3">
-                  <span class="match">JavaScript | CSS3 </span>
+                <!--END OF TESTIMONIAL 2 -->
+                <!--TESTIMONIAL 3 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-responsive" src="./img/Social-Veg-Responsive.png  " alt="">
+                    <div class="item-details">
+                      <h5>Socia Veg<span class="match">JavaScript, CSS3, Firebase</span></h5>
+                      <p>Plataforma SPA responsive, para vegetarianos en donde pueden
+                        intercambiar y compartir información, imágenes y recetas veg.</p>
+                    </div>
+                  </div>
                 </div>
-                <p class="description body-item-4"> Enciclopedia que agrupa información de los Pokémones. Se visualiza,
-                  filtra y ordenan los 251 pokemones de la región de Kanto y Johto. </p>
-                <!-- <div class="body-item-5">
-              <i class="details-icon icon-chevron-down"></i>
-              </div> -->
-                <div class="icon-set body-item-6">
-                  <i class="icon-thumbs-up"></i>
-                  <i class="icon-thumbs-down"></i>
-                  <i class="icon-plus"></i>
+                <!--END OF TESTIMONIAL 3 -->
+                <!--TESTIMONIAL 4 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-responsive" src="./img/pokedatos-responsive.png" alt="">
+                    <div class="item-details">
+                      <h5>Pokedatos <span>JavaScript | CSS3 </span> </h5>
+                      <p>Enciclopedia que agrupa información de los Pokémones. Se visualiza,
+                        filtra y ordenan los 251 pokemones de la región de Kanto y Johto..</p>
+                    </div>
+                  </div>
                 </div>
+                <!--END OF TESTIMONIAL 4 -->
+                <!--TESTIMONIAL 5 -->
+                <div class="item">
+                  <div class="shadow-effect">
+                    <img class="img-responsive item-1" src="./img/card-validate-responsive2.png" alt="">
+                    <div class="item-details">
+                      <h5>Card Validate <span>JavaScript, CSS</span></h5>
+                      <p>Pagina web desarrollada para validar y enmascarar los números de las tarjetas de crédito.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--END OF TESTIMONIAL 5 -->
               </div>
             </div>
           </div>
-          <div class="carousel-item col-md-4 item item-5">
-            <img src="" class="img-fluid mx-auto d-block">
           </div>
-          <!-- <div class="carousel-item col-md-4">
-            <img src="" class="img-fluid mx-auto d-block">
-          </div>
-          <div class="carousel-item col-md-4">
-            <img src="" class="img-fluid mx-auto d-block">
-          </div>
-          <div class="carousel-item col-md-4">
-            <img src="" class="img-fluid mx-auto d-block">
-          </div> -->
-        </div>
-        <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
+        </section>
+        <!-- END OF TESTIMONIALS -->
 
-
-    <h1 id="Proyectos">Proyectos</h1>
-    <div class="container">
-          <!-- <div class="arrow-left">
-            <i class="icon-angle-left"></i>
-          </div> -->
-          <div class="item item-1">
-            <div class="body-item">
-              <div class="body-item-1">
-                <div class="play">
-                  <!-- <i class="icon-play"></i> -->
-                </div>
-              </div>
-              <div class="title body-item-2">Md-link-luzciel</div>
-              <div class="properties body-item-3">
-                <span class="match">JavaScript | Node.Js </span>
-              </div>
-              <div class="description">
-                <p class="body-item-4">Librería NPM para extraer los enlaces de archivos markdown (.md), validar sus
-                  status y obtener estadísticas.</p>
-                <button class="body-item-button">Codigo</button>
-              </div>
-                <!-- <div class="body-item-5">
-              <i class="details-icon icon-chevron-down"></i>
-              </div> -->
-                <!-- <div class="icon-set body-item-6">
-              <i class="icon-github-sign github"></i>
-              <i class="icon-thumbs-down"></i>
-              <i class="icon-plus"></i>
-                </div> -->
-            </div>
-          </div>
-
-          <div class="item item-2">
-            <div class="body-item">
-              <div class="body-item-1">
-                <div class="play">
-                  <i class="icon-play"></i>
-                </div>
-              </div>
-              <div class="title body-item-2">ONU mujeres (Red Socia)</div>
-              <div class="properties body-item-3">
-                <span class="match">JavaScript | Node.Js</span>
-              </div>
-              <p class="description body-item-4">Librería NPM para extraer los enlaces de archivos markdown (.md),
-                validar sus status y obtener estadísticas.</p>
-              <div class="icon-set body-item-6">
-                <i class="icon-thumbs-up"></i>
-                <i class="icon-thumbs-down"></i>
-                <i class="icon-plus"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="item item-3">
-            <div class="body-item">
-              <div class="body-item-1">
-                <div class="play">
-                  <i class="icon-play"></i>
-                </div>
-              </div>
-              <div class="title body-item-2">Social Veg</div>
-              <div class="properties body-item-3">
-                <span class="match">JavaScript | CSS3 | Firebase</span>
-              </div>
-              <p class="description body-item-4">Plataforma SPA responsive, para vegetarianos en donde pueden
-                intercambiar y compartir información, imágenes y recetas veg.</p>
-              <button class="description body-item-4">Codigo</button>
-                  <!-- <div class="body-item-5">
-                <i class="details-icon icon-chevron-down"></i>
-                </div> -->
-              <div class="icon-set body-item-6">
-                <i class="icon-thumbs-up"></i>
-                <i class="icon-thumbs-down"></i>
-                <i class="icon-plus"></i>
-              </div>
-            </div>
-          </div>
-
-          <div class="item item-4">
-            <div class="body-item">
-              <div class="body-item-1">
-                <div class="play">
-                  <i class="icon-play"></i>
-                </div>
-              </div>
-              <div class="title body-item-2">Pokedatos</div>
-              <div class="properties body-item-3">
-                <span class="match">JavaScript | CSS3 </span>
-              </div>
-              <p class="description body-item-4"> Enciclopedia que agrupa información de los Pokémones. Se visualiza,
-                filtra y ordenan los 251 pokemones de la región de Kanto y Johto. </p>
-              <!-- <div class="body-item-5">
-            <i class="details-icon icon-chevron-down"></i>
-            </div> -->
-              <div class="icon-set body-item-6">
-                <i class="icon-thumbs-up"></i>
-                <i class="icon-thumbs-down"></i>
-                <i class="icon-plus"></i>
-              </div>
-            </div>
-          </div>
-                <!-- <div class="arrow-right">
-              <i class="icon-angle-right"></i>
-            </div> -->
-      </div>
 
 
     <!-- MAIN CONTAINER -->
@@ -345,14 +205,15 @@
   </div>
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-  integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-  integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+  integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+  integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
 <script src="main.js"></script>
 
 </html>
