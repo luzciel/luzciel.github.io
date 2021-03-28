@@ -9,12 +9,14 @@
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="aboutMe.css" /> 
+  <link rel="stylesheet" href="carousel.css" />
   <link rel="stylesheet" href="style.css" />
   <!-- <link rel="stylesheet" href="pruebas.css" /> -->
 </head>
@@ -23,21 +25,48 @@
   <div class="wrapper">
 
     <!-- HEADER -->
-    <header>
+    <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top ml-auto" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="collapse navbar-collapse main-nav" id="navbarTogglerDemo01">
       <!-- <div class="netflixLogo">
-        <a id="logo" href="#home"><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/logo.PNG?raw=true" alt="Logo Image"></a>
-      </div>       -->
-      <nav class="main-nav">
-        <a href="#home">Home</a>
-        <a href="./aboutMe.html">Sobre Mi</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#contacto">Contacto</a>
-        <a href="./pag2.html">Other</a>
+        <a id="logo" href="#home" class="logo netflixLogo">LUZCIEL</a>
+      </div> -->
+      <div class="">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a id="logo" href="#home" class="nav-link logo netflixLogo">LUZCIEL</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link nav-color" href="./pag2.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#aboutMe">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  nav-color" href="#abilities">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#contact">Contacto</a>
+          </li>
+        </ul>
+
+      </div>
+        <!-- <a class="nav-item" href="./pag2.html">Home</a>
+        <a class="nav-item"href="#aboutMe">Sobre Mi</a>
+        <a class="nav-item" href="#projects">Proyectos</a>
+        <a class="nav-item" href="#abilities">Habilidades</a>
+        <a class="nav-item" href="#contact">Contacto</a> -->
       </nav>
     </header>
     <!-- END OF HEADER -->
-    <section class="main-container container">
+
+
+    <section class="main-container container" id="aboutMe">
       <h1 class="About-me-title text-animations animation-text-wipe animate-in anim-delay-3">Sobre mi</h1>
       <div class="text-animations about-me">
         <div>
@@ -46,105 +75,129 @@
             desarrollar mi carrera dentro del mundo tecnológico.<br> <br>Me considero una persona responsable, leal,
             empática, con muchas ganas de aprender y amante de los desafíos. Me gusta trabajar en equipo y considero que
             el feedback es la fuente de la mejora continua.<br> <br>Tengo pasión por la lectura, el deporte, los viajes
-            y aprender o conocer cosas nuevas. (Tengo mente inquieta por eso siempre estoy aprendiendo algo
+            y aprender o conocer cosas nuevas. (Tengo mente inquieta por eso siempre estoy aprendiendo algo nuevo)
           </span>
         </div>
-        <!-- <span class="animation-text-wipe animate-in anim-delay-1 about-me-text">
-        Front-End Developer, psicóloga y una autodidacta nata con un alto sentido del compromiso, enfocada en desarrollar mi carrera dentro del mundo tecnológico
-      </span>
-      <br> -->
         <div>
           <img src="./img/perfil.1.jpeg" alt=""
             class="perfile text-animations animation-text-wipe animate-in anim-delay-3">
-          <a href="https://drive.google.com/uc?id=1WCrz_93GxI3aeDC7Rb0WemegqsHlUrKl&export=download" target="_blank" download>
-            <button class="btn-Curriculum text-animations animation-text-wipe animate-in anim-delay-3"><i
+          <a href="https://drive.google.com/uc?id=1WCrz_93GxI3aeDC7Rb0WemegqsHlUrKl&export=download" target="_blank"
+            download>
+            <button class="btn btn-Curriculum text-animations animation-text-wipe animate-in anim-delay-3"><i
                 class="fa fa-play" aria-hidden="true"></i> Curriculum</button>
           </a>
         </div>
-
       </div>
-
     </section>
 
-
-    <section class="testimonials">
-      <h1 id="Proyectos">Proyectos</h1>
+   <!-- CARAUSEL -->
+    <section class="testimonials" id="projects">
+      <h1>Proyectos</h1>
       <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div id="customers-testimonials" class="owl-carousel">
-    
-                <!--TESTIMONIAL 1 -->
-                <div class="item">
-                  <div class="shadow-effect">
-                    <img class="img-responsive" src="./img/md-link-luzciel.png" alt="">
-                    <div class="item-details">
-                      <h5>Md-link-luzciel <span>JavaScript | Node.Js</span></h5>
-                      <p>Librería NPM para extraer los enlaces de archivos markdown (.md), validar sus status y obtener estadísticas.</p>
-                      <!-- <button class="body-item-button">Codigo</button> -->
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="customers-testimonials" class="owl-carousel">
+
+              <!--TESTIMONIAL 1 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-responsive" src="./img/md-link-luzciel.png" alt="">
+                  <div class="item-details">
+                    <h5>Md-link-luzciel <span>JavaScript | Node.Js</span></h5>
+                    <p>Librería NPM para extraer los enlaces de archivos markdown (.md), validar sus status y obtener
+                      estadísticas.</p>
+                    <div class="div-btn-link">
+                      <a class="btn btn-primary btn-xs btn-github" href="#" data-primary="true" role="button">GitHub</a>
+                      <a class="btn btn-primary btn-xs btn-demo" href="#" data-primary="true" data-reactid=".0.1.0.3.0"
+                        role="button">Demo</a>
                     </div>
                   </div>
                 </div>
-                <!--END OF TESTIMONIAL 1 -->
-                <!--TESTIMONIAL 2 -->
-                <div class="item">
-                  <div class="shadow-effect">
-                    <img class="img-responsive" src="./img/burgerQueen.png" alt="">
-                    <div class="item-details">
-                      <h5>Red Socia ONU <span>JavaScript, Node.js</span></h5>
-                      <p>Red social SPA exclusica para ONU mujeres.</p>
-                    </div>
-                  </div>
-                </div>
-                <!--END OF TESTIMONIAL 2 -->
-                <!--TESTIMONIAL 3 -->
-                <div class="item">
-                  <div class="shadow-effect">
-                    <img class="img-responsive" src="./img/Social-Veg-Responsive.png  " alt="">
-                    <div class="item-details">
-                      <h5>Socia Veg<span class="match">JavaScript, CSS3, Firebase</span></h5>
-                      <p>Plataforma SPA responsive, para vegetarianos en donde pueden
-                        intercambiar y compartir información, imágenes y recetas veg.</p>
-                    </div>
-                  </div>
-                </div>
-                <!--END OF TESTIMONIAL 3 -->
-                <!--TESTIMONIAL 4 -->
-                <div class="item">
-                  <div class="shadow-effect">
-                    <img class="img-responsive" src="./img/pokedatos-responsive.png" alt="">
-                    <div class="item-details">
-                      <h5>Pokedatos <span>JavaScript | CSS3 </span> </h5>
-                      <p>Enciclopedia que agrupa información de los Pokémones. Se visualiza,
-                        filtra y ordenan los 251 pokemones de la región de Kanto y Johto..</p>
-                    </div>
-                  </div>
-                </div>
-                <!--END OF TESTIMONIAL 4 -->
-                <!--TESTIMONIAL 5 -->
-                <div class="item">
-                  <div class="shadow-effect">
-                    <img class="img-responsive item-1" src="./img/card-validate-responsive2.png" alt="">
-                    <div class="item-details">
-                      <h5>Card Validate <span>JavaScript, CSS</span></h5>
-                      <p>Pagina web desarrollada para validar y enmascarar los números de las tarjetas de crédito.</p>
-                    </div>
-                  </div>
-                </div>
-                <!--END OF TESTIMONIAL 5 -->
               </div>
+              <!--END OF TESTIMONIAL 1 -->
+              <!--TESTIMONIAL 2 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-responsive" src="./img/burgerQueen.png" alt="">
+                  <div class="item-details">
+                    <h5>Red Socia ONU <span>JavaScript, Node.js</span></h5>
+                    <p>Red social SPA exclusica para ONU mujeres.</p>
+                    <div class="div-btn-link">
+                      <a class="btn btn-primary btn-xs btn-github" href="#" data-primary="true" role="button">GitHub</a>
+                      <a class="btn btn-primary btn-xs btn-demo" href="#" data-primary="true" data-reactid=".0.1.0.3.0"
+                        role="button">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 2 -->
+              <!--TESTIMONIAL 3 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-responsive" src="./img/Social-Veg-Responsive.png  " alt="">
+                  <div class="item-details">
+                    <h5>Social Veg<span class="match">JavaScript, CSS3, Firebase</span></h5>
+                    <p>Plataforma SPA responsive, para vegetarianos en donde pueden
+                      intercambiar y compartir información, imágenes y recetas veg.</p>
+                    <div class="div-btn-link">
+                      <a class="btn btn-primary btn-xs btn-github" href="https://github.com/luzciel/Social-Veg"
+                        data-primary="true" role="button">GitHub</a>
+                      <a class="btn btn-primary btn-xs btn-demo" href="https://social-veg.web.app/" data-primary="true"
+                        data-reactid=".0.1.0.3.0" role="button">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 3 -->
+              <!--TESTIMONIAL 4 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-responsive" src="./img/pokedatos-responsive.png" alt="">
+                  <div class="item-details">
+                    <h5>Pokedatos <span>JavaScript | CSS3 </span> </h5>
+                    <p>Enciclopedia que agrupa información sobre Pokémones. Se visualiza,
+                      filtra y ordenan los 251 pokemones de la región de Kanto.</p>
+                    <div class="div-btn-link">
+                      <a class="btn btn-primary btn-xs btn-github" href="https://github.com/luzciel/POKEDATOS"
+                        data-primary="true" data-reactid=".0.1.0.3.0" role="button">GitHub</a>
+                      <a class="btn btn-primary btn-xs btn-demo" href="https://luzciel.github.io/POKEDATOS/src/"
+                        data-primary="true" data-reactid=".0.1.0.3.0" role="button">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 4 -->
+              <!--TESTIMONIAL 5 -->
+              <div class="item">
+                <div class="shadow-effect">
+                  <img class="img-responsive item-1" src="./img/card-validate-responsive2.png" alt="">
+                  <div class="item-details">
+                    <h5>Card Validation <span>JavaScript, CSS</span></h5>
+                    <p>Pagina web desarrollada para validar y enmascarar los números de las tarjetas de crédito.</p>
+                    <div class="div-btn-link">
+                      <a class="btn btn-primary btn-xs btn-github" href="https://github.com/luzciel/Card-validation"
+                        data-primary="true" role="button">GitHub</a>
+                      <a class="btn btn-primary btn-xs btn-demo"
+                        href="https://luzciel.github.io/Card-validation/src/pag2.html" data-primary="true"
+                        data-reactid=".0.1.0.3.0" role="button">Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--END OF TESTIMONIAL 5 -->
             </div>
           </div>
-          </div>
-        </section>
-        <!-- END OF TESTIMONIALS -->
+        </div>
+      </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
 
 
 
     <!-- MAIN CONTAINER -->
-    <section class="main-container">
-      <div class="location" id="home">
-        <h1 id="habilidades">Habilidades</h1>
+    <section class="main-container" id="abilities">
+      <div class="location">
+        <h1 class="abilities">Habilidades</h1>
         <div class="box">
           <a href=""><img src="./img/React.png" alt="" class="technology"></a>
           <a href=""><img src="./img/Bootstrap.png" alt="" class="technology"></a>
@@ -162,47 +215,44 @@
         </div>
       </div>
 
-      <!-- 
-      <h1 id="myList">Trending Now</h1>
-      <div class="box">
-        <a href=""><img src="./img/react-azul.png" alt=""></a>
-        <a href=""><img src="./img/bootstrap.png" alt=""></a>
-        <a href=""><img src="./img/js.png" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t4.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t5.PNG?raw=true" alt=""></a>
-        <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/t6.PNG?raw=true" alt=""></a>                  
-      </div> -->
-
 
       <!-- END OF MAIN CONTAINER -->
 
       <!-- LINKS -->
-      <section class="link">
-        <h1 id="contacto">Sigamos en contacto!</h1>
-        <div class="logos">
-          <!-- <img src="./img/programar.gif" alt=""> -->
+      <section class="link" id="contact">
+        <h1>Sigamos en contacto!</h1>
+        <div class="contact-body">
+          <div>
+            <img src="./img/gif.gif" class="contact-img" alt="">
+          </div>
+            <div class="contac-body-detail">
+              <p class="contact-body-text">Si quieres entrar en contacto para hablar sobre un nuevo proyecto o solo
+                decir "Hola", envíame un correo:</p>
+              <p class="contact-body-correo">Luzcielmontesinos@gmail.com</p>
+              <p class="contact-body-link">Encuentrame en:</p>
+              <div class="sub-links">
+                <!-- <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a> -->
+                <a href="https://www.linkedin.com/in/luzciel-montesinos" title="Linkedin">
+                  <i class="fa fa-linkedin-square fa-3x link-logo" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/luzciel?tab=repositories" title="App Talento Laboratoria">
+                  <i class="fa fa-code fa-3x link-logo" aria-hidden="true"></i>
+                </a>
+                <a href="https://app.talento.laboratoria.la/login" title="GitHub">
+                  <i class="fa fa-github fa-3x link-logo" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
 
-          <p>Si quieres entrar en contacto para hablar sobre un nuevo proyecto o solo decir "Hola", envíame un correo.
-          </p>
-          <p>Luzcielmontesinos@gmail.com</p>
+          </div>
 
         </div>
-        <div class="sub-links">
-          <!-- <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a> -->
-          <a href="https://www.linkedin.com/in/luzciel-montesinos" title="Linkedin"><i
-              class="fa fa-linkedin-square fa-4x link-logo logo" aria-hidden="true"></i></a>
-          <a href="https://github.com/luzciel?tab=repositories" title="GitHub"><i class="fa fa-github fa-4x link-logo"
-              aria-hidden="true"></i></a>
-
       </section>
       <!-- END OF LINKS -->
-
       <!-- FOOTER -->
       <footer>
-        <p>Luzciel Montesinos 2021</p>
-        <p>Front-end Developer</p>
+        <p>Luzciel Montesinos | Front-end Developer 2021</p>
       </footer>
-  </div>
 </body>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
@@ -214,6 +264,7 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+<script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
 
 </html>
