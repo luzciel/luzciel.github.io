@@ -20,12 +20,13 @@
 .testimonials h1 {
   padding-top: 5%;
   color: #333333;
+  padding-left: 2%;
 }
 
 #customers-testimonials .item-details {
   background-color: #333333;
   color: #fff;
-  padding: 20px 10px;
+  padding: 16px 10px 5px;
   text-align: left;
   height: 27vh;
 }
@@ -90,6 +91,10 @@
   justify-content: flex-end;
 }
 
+.btn-carousel{
+  padding: 0.1rem .75rem;
+  font-size: 0.7rem;
+}
 
 .btn-github{
   border: 2px solid rgba(234, 180, 41, 0.67);
