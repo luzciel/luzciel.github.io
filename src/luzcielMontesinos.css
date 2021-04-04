@@ -3,7 +3,7 @@ body {
   background: radial-gradient(#fff, #aaa);
   background-size: 100vw 100vh;
   overflow: hidden;
-  padding-top: 40vh;
+  padding-top: 34vh;
 }
 
 .txt {
@@ -16,10 +16,6 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  /* animation-duration: 3s;
-  animation: netflix_style 3.5s both; */
-  /* animation-iteration-count: 1;
-  animation-fill-mode: forwards; */
   outline: none;
   white-space: nowrap;
   color: #EAB429;
@@ -63,8 +59,7 @@ body {
 
 .button-conoceme {
     display: flex;
-    justify-content: center;
-    color: #EAB429;
+    justify-content: center;  
     animation: netflix_style 2.5s;
     visibility:hidden;
     cursor: pointer
@@ -72,19 +67,8 @@ body {
 }
 
 #button-conoceme{
-  color: #EAB429;
-  background: #F8F5F5;
-  border: 3px solid #EAB429;
-  /* width: 110%; */
-  box-sizing: border-box;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   border-radius: 7px;
-  font-family: "Roboto";
-  /* font-size: 100%; */
-  height: 100%;
-  font-size: 4vmin;
-  /* background: #EAB429; */
-  margin-top: 6%;
 }
 
 .div-text{
